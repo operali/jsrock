@@ -1,9 +1,14 @@
 # Jsrock
 
-一个包含常用javascript工程的开发脚手架
+包含常用javascript工程的开发脚手架, no more, no less
 
 ## feature
 
+- [x] typescript
+- [x] eslint
+- [x] jest
+- [x] browserlist (浏览器兼容性)
+- [x] script utility (克隆，发布工具)
 - [x] node module 模板
 - [x] node app 模板
 - [x] webpack (umd) 模板
@@ -13,11 +18,7 @@
 - [ ] electron 模板
 - [ ] cordova 模板
 - [ ] wechat 小程序模板
-- [x] typescript
-- [x] eslint
-- [x] jest
-- [x] browserlist (浏览器兼容性)
-- [x] script utility (克隆，发布工具)
+
 
 
 ## install
@@ -70,4 +71,10 @@ or
 > 谨慎修改配置
   
 ```.browserlist.rc # 浏览器兼容性```
+
+## FAQ
+*为什么选择JSS*
+sass/scss is heavy，wepack模板支持 less & jss, 基于css in js的灵活性和动态性，推荐使用jss, matrial UI 也依赖于JSS
+
+
 
