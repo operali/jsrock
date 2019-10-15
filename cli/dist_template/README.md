@@ -2,14 +2,14 @@
 
 一个包含常用javascript工程的开发脚手架
 
-## features
+## feature
 
 - [x] node module 模板
 - [x] node app 模板
 - [x] webpack (umd) 模板
 - [x] react 模板
 - [x] material UI 模板
-- [ ] and UI 模板
+- [ ] antd UI 模板
 - [ ] electron 模板
 - [ ] cordova 模板
 - [ ] wechat 小程序模板
@@ -17,30 +17,34 @@
 - [x] eslint
 - [x] jest
 - [x] browserlist (浏览器兼容性)
-- [x] script utility (克隆，发布等工具)
+- [x] script utility (克隆，发布工具)
 
 
 ## install
 ```bash
+  # 全局安装
+  yarn global add @jsrock/
+  # you can update jsrock by 
+  # yarn global add @jsrock/cli@latest
+
+  jsrock clone
+
+  cd your_project_cloned
+  # install depdencies for develop
+  yarn install --prod=false
+```
+or
+```bash
   # cd <your workspace directory>
   yarn add @jsrock/cli
+  
   npx jsrock clone
-  # 根据菜单提示创建你的工程
-  
+
+  cd your_project_cloned
+  # install depdencies for develop
+  yarn install --prod=false  
 ```
 
-```bash
-  # 较不推荐全局安装
-  yarn global add @jsrock/
-  jsrock clone
-```
-
-```bash
-  # 安装开发依赖
-  # cd <your cloned project directory>
-  yarn install --prod=false
-  
-```
 
 ## scripts
 ```bash
