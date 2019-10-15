@@ -1,0 +1,22 @@
+{
+  "name": "@jsrock/cli",
+  "version": "0.0.59",
+  "description": "tools for jsrock",
+  "engines": {
+    "node": ">=0.4.0"
+  },
+  "bin": {
+    "jsrock": "index.js"
+  },
+  "author": "sky.li",
+  "license": "MIT",
+  "dependencies": {
+    "@jsrock/core_dep": "latest",
+    "@jsrock/run_script": "latest",
+    "@jsrock/node_module_template": "latest",
+    "@jsrock/node_app_template": "latest",
+    "@jsrock/webpack_template": "latest",
+    "@jsrock/react_template": "latest",
+    "@jsrock/material_ui_template": "latest"
+  }
+}
