@@ -2,7 +2,7 @@
 
 一个包含常用javascript工程的开发脚手架
 
-## features
+## feature
 
 - [x] node module 模板
 - [x] node app 模板
@@ -17,7 +17,7 @@
 - [x] eslint
 - [x] jest
 - [x] browserlist (浏览器兼容性)
-- [x] script utility (克隆，发布等工具)
+- [x] script utility (克隆，发布工具)
 
 
 ## install
