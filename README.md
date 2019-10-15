@@ -73,7 +73,7 @@ or
 ```.browserlist.rc # 浏览器兼容性```
 
 ## FAQ
-> 为什么选择JSS
+> 为什么选择[JSS](https://cssinjs.org/?v=v10.0.0)
 
 sass/scss 依赖较重，jsrock支持 less & jss, 基于css in js的灵活性和动态性，推荐使用jss, matrial UI 也依赖于JSS
 
