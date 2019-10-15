@@ -23,7 +23,7 @@
 ## install
 ```bash
   # 全局安装
-  yarn global add @jsrock/
+  yarn global add @jsrock/cli
   # you can update jsrock by 
   # yarn global add @jsrock/cli@latest
 
