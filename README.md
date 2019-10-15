@@ -30,7 +30,7 @@
   jsrock clone
 
   cd your_project_cloned
-  # install depdencies for develop
+  # install depdencies for developing
   yarn install --prod=false
 ```
 or
@@ -41,7 +41,7 @@ or
   npx jsrock clone
 
   cd your_project_cloned
-  # install depdencies for develop
+  # install depdencies for developing
   yarn install --prod=false  
 ```
 
