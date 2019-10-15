@@ -8,8 +8,8 @@ import process from 'process'
 let tempalteRoot = '@jsrock'
 let distributeTemplate = 'dist_template'
 
-type template_t = 'node_app' | 'node_module' | 'webpack' | 'react';
-const templates: template_t[] = ['node_app', 'node_module', 'webpack', 'react'];
+type template_t = 'node_app' | 'node_module' | 'webpack' | 'react' | 'material_ui';
+const templates: template_t[] = ['node_app', 'node_module', 'webpack', 'react', 'material_ui'];
 
 const clone = () => {
   const getArgs = async function () {

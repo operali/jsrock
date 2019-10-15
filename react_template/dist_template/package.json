@@ -6,7 +6,7 @@
     "node": ">=0.4.0"
   },
   "main": "index.js",
-  "author": "sky.li",
+  "author": "operali",
   "license": "MIT",
   "dependencies": {
     "@jsrock/react_dep": "latest"
