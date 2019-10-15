@@ -1,0 +1,14 @@
+{
+  "name": "material_ui_template",
+  "version": "0.0.4",
+  "description": "react_template",
+  "engines": {
+    "node": ">=0.4.0"
+  },
+  "main": "index.js",
+  "author": "sky.li",
+  "license": "MIT",
+  "dependencies": {
+    "@jsrock/react_dep": "latest"
+  }
+}

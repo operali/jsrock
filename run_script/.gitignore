@@ -1,0 +1,25 @@
+# Mac OS
+.DS_Store
+
+# NPM
+node_modules
+npm-*
+
+# Testing
+/.nyc_output
+/coverage
+
+# Build
+/**/build
+/**/dist
+/.opt-in
+/es
+
+ vscode
+.vscode/
+
+translations/
+.idea/
+
+package-lock.json
+yarn-error.log

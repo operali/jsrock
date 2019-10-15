@@ -1,0 +1,40 @@
+{
+  "name": "@jsrock/node_app_template",
+  "version": "0.0.20",
+  "description": "node template for jsrock",
+  "scripts": {
+    "start": "nodemon --watch ./src/**/*.ts --exec ./node_modules/.bin/ts-node src/bin/index.ts",
+    "start_dist": "tsc && concurrently \"tsc -w -p ./\" \"nodemon --inspect ./dist/bin/index.js --watch dist\"",
+    "build": "npm run clean & tsc",
+    "dist": "ts-node run_script distribute",
+    "clean": "rimraf build dist",
+    "lint": "eslint src --ext ts",
+    "test": "jest"
+  },
+  "author": "operali",
+  "license": "MIT",
+  "peerDependencies": {},
+  "devDependencies": {
+    "@jsrock/core_dep": "latest",
+    "@jsrock/run_script": "latest"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "diagnostics": false
+      }
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}

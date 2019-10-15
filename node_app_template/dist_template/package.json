@@ -1,0 +1,13 @@
+{
+  "name": "node_app",
+  "version": "0.0.4",
+  "description": "node_app",
+  "engines": {
+    "node": ">=0.4.0"
+  },
+  "bin": {
+    "node_app": "index.js"
+  },
+  "author": "sky.li",
+  "license": "MIT"
+}

@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "removeComments": true,
+    "rootDir": "./src",
+    "outDir": "./build/type",
+    "sourceMap": true,
+    "noUnusedParameters": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "target": "es2015",
+    "baseUrl": "./",
+    "allowSyntheticDefaultImports": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "preserveConstEnums": true
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.d.ts",
+    "**/*.spec.ts"
+  ]
+}

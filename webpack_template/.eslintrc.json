@@ -1,0 +1,48 @@
+{
+  "env": {
+    "node": true,
+    "browser": true,
+    "commonjs": true,
+    "es6": true
+  },
+  "extends": [
+    "eslint:recommended"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "rules": {},
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      }
+    }
+  },
+  "overrides": [
+    {
+      "files": [
+        "*.ts"
+      ],
+      "rules": {
+        "semi": "off",
+        "no-console": "off",
+        "comma-dangle": "off"
+      }
+    }
+  ]
+}

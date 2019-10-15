@@ -1,0 +1,38 @@
+{
+  "name": "@jsrock/node_module_template",
+  "version": "0.0.18",
+  "description": "node template for jsrock",
+  "scripts": {
+    "build": "npm run clean & tsc",
+    "dist": "ts-node run_script distribute",
+    "clean": "rimraf build dist",
+    "lint": "eslint src --ext ts",
+    "test": "jest"
+  },
+  "author": "operali",
+  "license": "MIT",
+  "peerDependencies": {},
+  "devDependencies": {
+    "@jsrock/core_dep": "latest",
+    "@jsrock/run_script": "latest"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "diagnostics": false
+      }
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}

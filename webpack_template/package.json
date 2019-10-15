@@ -1,0 +1,40 @@
+{
+  "name": "@jsrock/webpack_template",
+  "version": "0.0.5",
+  "description": "node module template for jsrock",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.dev.ts",
+    "build": "npm run clean && webpack --config webpack.prod.ts",
+    "dist": "ts-node run_script distribute",
+    "clean": "rimraf build dist",
+    "lint": "eslint src --ext ts",
+    "test": "jest"
+  },
+  "author": "operali",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@jsrock/core_dep": "latest",
+    "@jsrock/webpack_dep": "latest",
+    "@jsrock/run_script": "latest"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "diagnostics": false
+      }
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}

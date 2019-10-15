@@ -1,0 +1,23 @@
+{
+  "name": "@jsrock/run_script",
+  "version": "0.0.7",
+  "description": "script utils for jsrock",
+  "author": "operali",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "dependencies": {
+    "@types/inquirer": "^6.5.0",
+    "@types/ncp": "^2.0.1",
+    "@types/yargs": "^13.0.3",
+    "camelcase": "^5.3.1",
+    "chalk": "^2.3.0",
+    "concurrently": "^4.1.2",
+    "inquirer": "^7.0.0",
+    "ncp": "^2.0.0",
+    "nodemon": "^1.19.2",
+    "yargs": "^13.3.0"
+  },
+  "scripts": {
+    "dist": "tsc"
+  }
+}

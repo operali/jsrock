@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        /* root */
+
+        html,
+        body,
+        #root {
+            width: 100%;
+            height: 100%;
+        }
+
+        body,
+        div {
+            box-sizing: border-box;
+            margin: 0rem;
+            padding: 0rem;
+            color: whitesmoke;
+        }
+
+
+        /* container */
+
+        div {
+            box-sizing: border-box;
+            display: flex;
+            position: relative;
+            justify-content: flex-start;
+            align-items: flex-start;
+            /* stretch */
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+
+
+        /* border */
+
+        #root,
+        .logger,
+        .command {
+            background-color: black;
+            border: 1px red solid;
+        }
+
+        #root {
+            align-items: stretch;
+        }
+
+        .button {
+            flex-grow: 0;
+            margin: 0.5rem 1rem;
+            user-select: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            background-color: pink;
+            color: black;
+            transition: background 0.2s linear, color 0.2s linear;
+        }
+
+        .button:hover {
+            background-color: red;
+            color: yellow
+        }
+
+        .logger {
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding-left: 0.5rem;
+            overflow: auto;
+            flex-grow: 1;
+        }
+
+        .log,
+        .error {
+            margin-left: 0.5rem;
+        }
+
+        .error {
+            color: red;
+        }
+
+        .commander {
+            flex-direction: row;
+            align-items: flex-start;
+            flex-grow: 0;
+        }
+
+        .command {
+            display: inline-block;
+            overflow: auto;
+            padding: 0.25rem;
+            align-self: center;
+            flex-grow: 1;
+            height: 2rem;
+            word-wrap: break-word;
+        }
+    </style>
+    <script src="require.js"></script>
+    <title><%= moduleName %></title>
+</head>
+
+<body onload="ready()">
+    <script>
+        var moduleName = "<%= moduleName %>";
+        var module42 = null;
+
+        function log(str) {
+            var log = document.querySelector('.logger');
+            var text = document.createElement('div');
+            text.innerText = str;
+            text.className = 'log';
+            log.appendChild(text);
+        }
+
+        function error(str) {
+            var log = document.querySelector('.logger');
+            var text = document.createElement('div');
+            text.innerText = str;
+            text.className = 'error';
+            log.appendChild(text);
+        }
+
+        function clearLog() {
+            var log = document.querySelector('.logger');
+            log.innerText = '';
+        }
+
+        function ready() {
+            require([moduleName], (mod) => {
+                log(`${moduleName} is loaded`);
+                log(`I am ready`);
+                lib42 = mod;
+            })
+        }
+
+        function go() {
+            var commandStr = document.querySelector('.command').textContent;
+            try {
+                log(eval(commandStr));
+            } catch (ex) {
+                error('' + ex);
+            }
+        }
+    </script>
+    <div id="root">
+        <div class="logger"></div>
+        <div class="commander">
+            <div class="button" onclick="clearLog()">
+                clear
+            </div>
+            <div class="command" contenteditable="true"
+                onkeypress="event.key=='Enter'?(event.preventDefault(),go()):undefined">
+                lib42.default.foo().then(n=>log(n))
+            </div>
+            <div class="button" onclick="go()">
+                go
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

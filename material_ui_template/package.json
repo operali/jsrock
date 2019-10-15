@@ -1,0 +1,47 @@
+{
+  "name": "@jsrock/material_ui_template",
+  "version": "0.0.1",
+  "description": "node module template for jsrock",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.dev.ts",
+    "build": "npm run clean && webpack --config webpack.prod.ts",
+    "dist": "ts-node run_script distribute",
+    "clean": "rimraf build dist",
+    "lint": "eslint src --ext ts",
+    "test": "jest"
+  },
+  "author": "operali",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@jsrock/core_dep": "latest",
+    "@jsrock/react_dep": "latest",
+    "@jsrock/run_script": "latest",
+    "@jsrock/webpack_dep": "latest",
+    "@material-ui/core": "^4.5.1",
+    "@material-ui/icons": "^4.5.1"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "moduleNameMapper": {
+      "\\.(css|less)$": "<rootDir>/test/mock/fileTypeForJest.js",
+      "\\.(gif|ttf|eot|svg|png|jpg|wav)$": "<rootDir>/test/mock/fileTypeForJest.js"
+    },
+    "globals": {
+      "ts-jest": {
+        "diagnostics": false
+      }
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}

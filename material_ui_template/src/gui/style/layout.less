@@ -1,0 +1,48 @@
+.box {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.container {
+  .box();
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+
+.overlap {
+  .container();
+  position: absolute;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.stage {
+  .container();
+  margin: 0;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.root {
+  .box();
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.border {
+  border: 1px red solid
+}
