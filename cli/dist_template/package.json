@@ -1,6 +1,6 @@
 {
   "name": "@jsrock/cli",
-  "version": "0.0.62",
+  "version": "0.0.63",
   "description": "tools for jsrock",
   "engines": {
     "node": ">=0.4.0"
