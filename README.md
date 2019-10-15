@@ -74,7 +74,8 @@ or
 
 ## FAQ
 > 为什么选择JSS
-sass/scss is heavy，wepack模板支持 less & jss, 基于css in js的灵活性和动态性，推荐使用jss, matrial UI 也依赖于JSS
+
+sass/scss 依赖较重，jsrock支持 less & jss, 基于css in js的灵活性和动态性，推荐使用jss, matrial UI 也依赖于JSS
 
 
 
