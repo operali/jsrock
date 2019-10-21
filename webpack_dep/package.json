@@ -1,6 +1,6 @@
 {
   "name": "@jsrock/webpack_dep",
-  "version": "0.0.25",
+  "version": "0.0.26",
   "description": "webpack dependencies for jsrock",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

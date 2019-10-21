@@ -1,6 +1,6 @@
 {
   "name": "@jsrock/cli",
-  "version": "0.0.63",
+  "version": "0.1.0",
   "description": "tools for jsrock",
   "engines": {
     "node": ">=0.4.0"
@@ -18,5 +18,12 @@
     "@jsrock/webpack_template": "latest",
     "@jsrock/react_template": "latest",
     "@jsrock/material_ui_template": "latest"
-  }
+  },
+  "keywords": [
+    "cli",
+    "scaffold",
+    "build",
+    "build-tool",
+    "generator"
+  ]
 }

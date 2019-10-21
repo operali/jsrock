@@ -1,6 +1,6 @@
 {
   "name": "@jsrock/react_template",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "node module template for jsrock",
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.ts",

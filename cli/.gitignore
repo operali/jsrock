@@ -15,8 +15,6 @@ npm-*
 /.opt-in
 /es
 
- vscode
-.vscode/
 
 translations/
 .idea/

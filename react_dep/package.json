@@ -1,6 +1,6 @@
 {
   "name": "@jsrock/react_dep",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "webpack dependencies for jsrock",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
