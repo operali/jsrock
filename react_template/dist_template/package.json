@@ -2,11 +2,8 @@
   "name": "react_template",
   "version": "0.0.3",
   "description": "react_template",
-  "engines": {
-    "node": ">=0.4.0"
-  },
   "main": "index.js",
-  "author": "operali",
+  "author": "your name",
   "license": "MIT",
   "dependencies": {
     "@jsrock/react_dep": "latest"

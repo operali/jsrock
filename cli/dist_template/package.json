@@ -1,6 +1,6 @@
 {
   "name": "@jsrock/cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "tools for jsrock",
   "engines": {
     "node": ">=0.4.0"
@@ -8,7 +8,7 @@
   "bin": {
     "jsrock": "index.js"
   },
-  "author": "operali",
+  "author": "your name",
   "license": "MIT",
   "dependencies": {
     "@jsrock/core_dep": "latest",

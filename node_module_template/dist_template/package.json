@@ -2,11 +2,8 @@
   "name": "node_module",
   "version": "0.0.1",
   "description": "lib",
-  "engines": {
-    "node": ">=0.4.0"
-  },
   "main": "index.js",
-  "author": "operali",
+  "author": "your name",
   "license": "MIT",
   "dependencies": {}
 }

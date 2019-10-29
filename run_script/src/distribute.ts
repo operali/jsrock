@@ -72,9 +72,16 @@ const distribute = () => {
       if (fname.endsWith('type')) {
         return false
       }
-      console.log(util.chalk.greenBright(fname), 'is copyed');
+      console.log(util.chalk.greenBright(fname), 'is copied');
       return true;
     });
+    let readmePath = util.path.resolve(curDir, './README.md');
+    try{
+      await util.copyFile2Dir(readmePath, distDir);
+      console.log(util.chalk.greenBright(readmePath), 'is copied');
+    } catch(ex) {
+      console.log(util.chalk.redBright(readmePath), 'could not be copied:'+ex);
+    }
   }
 
   const build = async (NO: number) => {

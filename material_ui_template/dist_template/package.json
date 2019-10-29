@@ -1,12 +1,9 @@
 {
   "name": "material_ui_template",
-  "version": "0.0.4",
+  "version": "0.0.1",
   "description": "react_template",
-  "engines": {
-    "node": ">=0.4.0"
-  },
   "main": "index.js",
-  "author": "operali",
+  "author": "yourname",
   "license": "MIT",
   "dependencies": {
     "@jsrock/react_dep": "latest"

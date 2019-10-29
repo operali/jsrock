@@ -8,6 +8,9 @@ import { ncp } from 'ncp'
 import node_util from 'util'
 import child_process from 'child_process'
 
+
+const fsp = fs.promises;
+
 const util = {
   path, chalk, yargs, inquirer, camelcase, node_util, fs, process, child_process,
   delay: (s: number) => new Promise((res) => {
@@ -34,6 +37,10 @@ const util = {
         res();
       });
     })
+  },
+  copyFile2Dir: async (from: string, dir: string) => {
+    const { COPYFILE_EXCL } = fs.constants;
+    return await fsp.copyFile(from, path.resolve(dir, path.basename(from)), COPYFILE_EXCL);
   },
   existFile: async (fpath: string) => {
     let r: Promise<boolean> = new Promise((res) => {

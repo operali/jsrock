@@ -1,6 +1,6 @@
 {
   "name": "@jsrock/node_app_template",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "description": "node template for jsrock",
   "scripts": {
     "start": "nodemon --watch ./src/**/*.ts --exec ./node_modules/.bin/ts-node src/bin/index.ts",

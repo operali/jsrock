@@ -8,6 +8,6 @@
   "bin": {
     "node_app": "index.js"
   },
-  "author": "operali",
+  "author": "your name",
   "license": "MIT"
 }
