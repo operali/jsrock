@@ -21,12 +21,12 @@
     "preserveConstEnums": true
   },
   "include": [
-    "src/**/*.ts"
+    "src"
   ],
   "exclude": [
     "node_modules",
+    "build",
     "dist",
-    "**/*.d.ts",
     "**/*.spec.ts"
   ]
 }

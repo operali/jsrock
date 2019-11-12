@@ -1,6 +1,6 @@
 {
   "name": "@jsrock/cli",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "tools for jsrock",
   "engines": {
     "node": ">=0.4.0"
@@ -8,14 +8,14 @@
   "bin": {
     "jsrock": "index.js"
   },
-  "author": "your name",
+  "author": "operali",
   "license": "MIT",
   "dependencies": {
     "@jsrock/core_dep": "latest",
     "@jsrock/run_script": "latest",
     "@jsrock/node_module_template": "latest",
     "@jsrock/node_app_template": "latest",
-    "@jsrock/webpack_template": "latest",
+    "@jsrock/webpack_template": "0.1.0",
     "@jsrock/react_template": "latest",
     "@jsrock/material_ui_template": "latest"
   },
