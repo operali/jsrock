@@ -1,6 +1,6 @@
 # Jsrock
 
-包含常用javascript工程的开发脚手架, no more, no less
+包含常用javascript工程的开发脚手架
 
 ## feature
 
